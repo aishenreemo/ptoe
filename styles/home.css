@@ -14,9 +14,25 @@ div.title {
 	font-size: 2rem;
 }
 
-div.grid {
-	border: solid 1px var(--palette-foreground);
+div.table {
 	width: 100%;
 	height: 100%;
 	display: grid;
 }
+
+table {
+	table-layout: fixed;
+}
+
+td {
+	text-align: center;
+}
+
+tr.divider {
+	height: clamp(.2rem, 4vh, .6rem);
+}
+
+td:not(.invisible) {
+	border: solid 1px var(--palette-foreground);
+}
+
