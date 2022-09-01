@@ -1,8 +1,41 @@
 @import url("https://rsms.me/inter/inter.css");
 
+/* https://github.com/janleigh/dotfiles#art-colorscheme */
 :root {
-	--palette-background: #100F1E;
-	--palette-foreground: #414056;
+	--palette-background: #c5c8c9;
+	--palette-foreground: #0B0F10;
+
+	/* black */
+	--palette-color0: #101415;
+	--palette-color8: #131718;
+
+	/* red */
+	--palette-color1: #df5b61;
+	--palette-color9: #ee6a70;
+
+	/* green */
+	--palette-color2: #87c7a1;
+	--palette-color10: #96d6b0;
+
+	/* yellow */
+	--palette-color3: #de8f78;
+	--palette-color11: #ffb29b;
+
+	/* blue */
+	--palette-color4: #6791c9;
+	--palette-color12: #7ba5dd;
+
+	/* magenta */
+	--palette-color5: #bc83e3;
+	--palette-color13: #cb92f2;
+
+	/* cyan */
+	--palette-color6: #70b9cc;
+	--palette-color14: #7fc8db;
+
+	/* white */
+	--palette-color7: #c4c4c4;
+	--palette-color15:#cccccc;
 }
 
 *,
@@ -20,6 +53,6 @@ html {
 }
 
 body {
-    background-color: var(--palette-background);
-    color: var(--palette-foreground);
+    background-color: var(--palette-color0);
+    color: var(--palette-color6);
 }
