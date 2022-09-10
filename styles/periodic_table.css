@@ -1,57 +1,111 @@
 main {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
+	gap: .3rem;
 	width: calc(100vw - 2rem);
 	height: calc(100vh - 2rem);
 	margin: 1rem 1rem 1rem 1rem;
+	min-width: 1200px;
+	min-height: 440px;
 }
 
 div.title {
+	width: 50%;
+	margin: auto;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.5rem;
+	padding: 1rem;
+	background-color: var(--palette-color7);
+	color: var(--palette-color0);
+	border-radius: .3rem;
 }
 
 div.table {
 	width: 100%;
-	height: 100%;
+	height: 90%;
 	display: grid;
-	grid-column-gap: .5vw;
-	grid-row-gap: .5vw;
+	grid-template-columns: repeat(18, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	gap: .2rem;
 }
 
 div.element-previewer {
 	grid-column-start: 3;
+	grid-column-end: 13;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	border: solid 1px var(--palette-color8);
 }
 
+div.element {
+	display: flex;
+	flex-direction: column;
+	border: solid 1px var(--palette-color8);
+	background-color: var(--palette-color7);
+	color: var(--palette-color0);
+	padding: 0.2rem;
 }
 
+div.element > div.atomic-number {
+	font-size: 0.4rem;
+	font-weight: bold;
+	cursor: default;
+	align-self: flex-start;
 }
 
+div.element > div.symbol {
+	font-size: 0.9rem;
+	font-weight: bold;
+	cursor: default;
+	align-self: center;
 }
 
+div.element > div.name {
+	font-size: 0.45rem;
+	cursor: default;
+	align-self: center;
 }
 
+div.diatomic-nonmetal {
+	background-color: var(--palette-color11);
 }
 
+div.polyatomic-nonmetal {
+	background-color: var(--palette-color11);
 }
 
+div.noble-gas {
+	background-color: var(--palette-color3);
 }
 
+div.post-transition-metal {
+	background-color: var(--palette-color2);
 }
 
+div.transition-metal {
+	background-color: var(--palette-color12);
 }
 
+div.metalloid {
+	background-color: var(--palette-color5);
 }
 
+div.alkali-metal {
+	background-color: var(--palette-color1);
 }
 
+div.alkaline-earth-metal {
+	background-color: var(--palette-color13);
 }
 
+div.lanthanide {
+	background-color: var(--palette-color14);
 }
 
+div.actinide {
+	background-color: var(--palette-color6);
 }
 
+div.unknown {
+	background-color: var(--palette-color15);
 }
