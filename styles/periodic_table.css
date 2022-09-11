@@ -100,7 +100,7 @@ div.element-preview > div.name {
 	flex-grow: 1;
 }
 
-div.gas > div.symbol {
+div.gas > div.symbol, div.legend-gas > span {
 	color: var(--palette-color9);
 	text-shadow:
 		-1px -1px 0px var(--palette-color8),
@@ -109,7 +109,7 @@ div.gas > div.symbol {
 		 1px  1px 0px var(--palette-color8);
 }
 
-div.liquid > div.symbol {
+div.liquid > div.symbol, div.legend-liquid > span {
 	color: var(--palette-color4);
 	text-shadow:
 		-1px -1px 0px var(--palette-color8),
@@ -118,13 +118,44 @@ div.liquid > div.symbol {
 		 1px  1px 0px var(--palette-color8);
 }
 
-div.solid > div.symbol {
+div.solid > div.symbol, div.legend-solid > span {
 	color: var(--palette-color0);
 	text-shadow:
 		-1px -1px 0px var(--palette-color7),
 		-1px  1px 0px var(--palette-color7),
 		 1px -1px 0px var(--palette-color7),
 		 1px  1px 0px var(--palette-color7);
+}
+
+div.phase-legend {
+	grid-column-start: 13;
+	grid-column-end: 18;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: var(--palette-color7);
+}
+
+div.phase-legend > div.legend-title {
+	flex-grow: 1.5;
+	font-weight: bolder;
+}
+
+div.phase-legend > div.legend-solid,
+div.phase-legend > div.legend-liquid,
+div.phase-legend > div.legend-gas {
+	flex-grow: 0.7;
+	font-size: 0.9rem;
+	font-style: italic;
+}
+
+div.phase-legend > div.legend-solid > span,
+div.phase-legend > div.legend-liquid > span,
+div.phase-legend > div.legend-gas > span {
+	font-size: 1rem;
+	font-weight: bolder;
 }
 
 div.diatomic-nonmetal {
