@@ -7,12 +7,13 @@ async function load() {
     for (let i = 0; i < ptoe_json.order.length; i++) {
         const element_key = ptoe_json.order[i];
         const element_value = ptoe_json[element_key];
+        const element_phase = element_value.phase.toLowerCase();
         const element_category = element_value.category
             .replaceAll(' ', '-')
             .replaceAll(',-', ' ');
 
         const element_div = document.createElement("div");
-        element_div.className = `element ${element_category}`;
+        element_div.className = `element ${element_category} ${element_phase}`;
         element_div.id = element_key;
 
         const atomic_num_div = document.createElement("div");
@@ -42,6 +43,7 @@ function onHover(i, ptoe_json) {
     const element_previewer_div = document.querySelector("div.element-previewer");
     const element_key = ptoe_json.order[i];
     const element_value = ptoe_json[element_key];
+    const element_phase = element_value.phase.toLowerCase();
     const element_category = element_value.category
         .replaceAll(' ', '-')
         .replaceAll(',-', ' ');
@@ -52,7 +54,7 @@ function onHover(i, ptoe_json) {
     }
 
     const element_div = document.createElement("div");
-    element_div.className = `element-preview ${element_category}`;
+    element_div.className = `element-preview ${element_category} ${element_phase}`;
 
     const atomic_num_div = document.createElement("div");
     const symbol_div = document.createElement("div");

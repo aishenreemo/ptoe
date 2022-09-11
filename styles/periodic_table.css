@@ -100,6 +100,33 @@ div.element-preview > div.name {
 	flex-grow: 1;
 }
 
+div.gas > div.symbol {
+	color: var(--palette-color9);
+	text-shadow:
+		-1px -1px 0px var(--palette-color8),
+		-1px  1px 0px var(--palette-color8),
+		 1px -1px 0px var(--palette-color8),
+		 1px  1px 0px var(--palette-color8);
+}
+
+div.liquid > div.symbol {
+	color: var(--palette-color4);
+	text-shadow:
+		-1px -1px 0px var(--palette-color8),
+		-1px  1px 0px var(--palette-color8),
+		 1px -1px 0px var(--palette-color8),
+		 1px  1px 0px var(--palette-color8);
+}
+
+div.solid > div.symbol {
+	color: var(--palette-color0);
+	text-shadow:
+		-1px -1px 0px var(--palette-color7),
+		-1px  1px 0px var(--palette-color7),
+		 1px -1px 0px var(--palette-color7),
+		 1px  1px 0px var(--palette-color7);
+}
+
 div.diatomic-nonmetal {
 	background-color: var(--palette-color11);
 }
